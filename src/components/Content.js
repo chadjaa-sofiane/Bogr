@@ -4,7 +4,6 @@ import laptopImage from "../assets/images/illustration-laptop-desktop.svg";
 import PhoneIamge from "../assets/images/illustration-phones.svg";
 
 import editeurIamgeMobile from "../assets/images/illustration-editor-mobile.svg";
-import laptopImageMobile from "../assets/images/illustration-laptop-mobile.svg";
 
 import "../styles/content.scss";
 function Content() {
@@ -12,15 +11,11 @@ function Content() {
     <div>
       <div className="content_1_wrapper">
         <div className="content_1_container">
-          <img
-            src={editeurIamgeMobile}
-            className="mobile_image"
-            alt="editeur image"
-          />
+          <img src={editeurIamgeMobile} className="mobile_image" alt="editeur"/>
 
           <h1 className="content_1_title">Designed for the future</h1>
           <div className="editeur_image">
-            <img src={editeurIamge} className="desktop_image" alt="editeur image" />
+            <img src={editeurIamge} className="desktop_image" alt="editeur" />
           </div>
 
           <div className="describe">
