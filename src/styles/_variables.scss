@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+// primary colors
+
+$primary_Light: hsl(356, 100%, 66%);
+$primary_Main: hsl(355, 100%, 74%);
+$primary_Dark: hsl(208, 49%, 24%);
+
+//Neutral colors
+$Header_Font_color: hsl(0, 0%, 100%);
+$footer_text: hsl(240, 2%, 79%);
+$body_copy: hsl(207, 13%, 34%);
+$footer_background: hsl(240, 10%, 16%);
+
+//Gradient
+
+//Background gradient - Intro/CTA mobile nav :
+
+$Background_gradient_light: hsl(13, 100%, 72%);
+$Background_gradient_main: hsl(353, 100%, 62%);
+
+//Background gradient - body:
+
+$Background_gradient_body_light: hsl(237, 17%, 21%);
+$Background_gradient_body_main: hsl(237, 23%, 32%);
+
+//Typography
+
+$Font_size: 16px;
+
+$primary_font: "Ubuntu";
+$secondary_font: "Overpass";
+//button Style
+@mixin Button {
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 1em;
+}
+
+//contaienr 
+@mixin  Container {
+  max-width: 1100px;
+  margin: auto;  
+}
