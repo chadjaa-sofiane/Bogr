@@ -4,16 +4,20 @@ import laptopImage from "../assets/images/illustration-laptop-desktop.svg";
 import PhoneIamge from "../assets/images/illustration-phones.svg";
 
 import editeurIamgeMobile from "../assets/images/illustration-editor-mobile.svg";
+import laptopIamgeMobile from "../assets/images/illustration-laptop-mobile.svg";
 
 import "../styles/content.scss";
 function Content() {
   return (
-    <div>
+    <>
       <div className="content_1_wrapper">
         <div className="content_1_container">
-          <img src={editeurIamgeMobile} className="mobile_image" alt="editeur"/>
-
           <h1 className="content_1_title">Designed for the future</h1>
+          <img
+            src={editeurIamgeMobile}
+            className="mobile_image"
+            alt="editeur"
+          />
           <div className="editeur_image">
             <img src={editeurIamge} className="desktop_image" alt="editeur" />
           </div>
@@ -58,6 +62,7 @@ function Content() {
       </div>
       <div className="content_3_wrapper">
         <div className="content_3_container">
+          <img alt="laptop" src={laptopIamgeMobile} className="mobile_image" />
           <div className="labtop_image">
             <img alt="laptop" className="desktop_image" src={laptopImage} />
           </div>
@@ -82,7 +87,7 @@ function Content() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

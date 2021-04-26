@@ -1,8 +1,7 @@
 @import "./variables.scss";
 .content_1_wrapper {
   position: relative;
-  width: 100%;
-  height: 850px;
+  min-height: 850px;
   margin-top: 100px;
   padding: 150px 0;
   h1,
@@ -38,16 +37,24 @@
   }
 }
 .describe {
+  margin-top: 40px;
   font-weight: 500;
   padding: 15px 30px;
   max-width: 550px;
+  font-family: $secondary_font;
+  padding: 0 30px;
   p {
     line-height: 30px;
     font-size: 0.8em;
     margin-top: 25px;
   }
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
 }
 .content_2_wrapper {
+  position: relative;
   width: 100%;
   margin-top: 50px;
   background-image: linear-gradient(
@@ -62,28 +69,26 @@
 .content_2_container {
   @include Container();
   color: $Header_Font_color;
-  max-height: 390px;
   width: 100%;
+  min-height: 390px;
   display: flex;
+  height: 100%;
   align-items: center;
-  .describe {
-    font-weight: 500;
-    padding: 0 30px;
-    font-family: $secondary_font;
-    h1 {
-      font-size: 2.2rem;
-      font-weight: 500;
-    }
-  }
 }
 .phone_image {
+  display: relative;
+  width: 50%;
+  height: 10px;
   padding: 0;
-  margin-top: 50px;
+  img {
+    display: absolute;
+    transform: translateY(-260px);
+  }
 }
 .content_3_wrapper {
   position: relative;
   width: 100%;
-  height: 800px;
+  min-height: 800px;
   margin-top: 150px;
   color: $body_copy;
   display: flex;
@@ -103,4 +108,34 @@
   justify-content: center;
   align-items: flex-end;
   height: 100%;
+}
+
+@media all and(max-width: 720px) {
+  .editeur_image,
+  .labtop_image {
+    display: none;
+  }
+  .mobile_image {
+    display: block;
+  }
+  .content_1_container,
+  .content_2_container,
+  .content_3_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content_2_container {
+    justify-content: space-around;
+    height: 600px;
+    padding: 100px 0;
+  }
+  .phone_image {
+    width: 100%;
+    transform: translateY(-50px);
+    img {
+      width: 400px;
+    }
+  }
 }
