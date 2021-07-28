@@ -73,16 +73,20 @@
   min-height: 390px;
   display: flex;
   height: 100%;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 0;
 }
 .phone_image {
   display: relative;
   width: 50%;
-  height: 10px;
+  height: 300px;
+  margin-bottom: 50px;
   padding: 0;
   img {
     display: absolute;
-    transform: translateY(-260px);
+    transform: translateY(-130px);
   }
 }
 .content_3_wrapper {
@@ -110,7 +114,7 @@
   height: 100%;
 }
 
-@media all and(max-width: 720px) {
+@media all and(max-width: 960px) {
   .editeur_image,
   .labtop_image {
     display: none;
@@ -128,14 +132,16 @@
   }
   .content_2_container {
     justify-content: space-around;
-    height: 600px;
     padding: 100px 0;
   }
   .phone_image {
     width: 100%;
-    transform: translateY(-50px);
+    height: 100px;
+    text-align: center;
+    margin-bottom: 0;
     img {
       width: 400px;
+      transform: translateY(-60%);
     }
   }
 }

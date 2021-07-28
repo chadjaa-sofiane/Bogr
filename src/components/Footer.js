@@ -2,10 +2,11 @@ import "../styles/Footer.scss";
 const Footer = () => {
   return (
     <div className="footer_wrapper">
-        <div className="footer_container">
-          <div>
-            <h1 className="title"> Blogr </h1>
-          </div>
+      <div className="footer_container">
+        <div>
+          <h1 className="title"> Blogr </h1>
+        </div>
+        <div className="links-wrapper">
           <div className="links">
             <h3>Product </h3>
             <ul>
@@ -18,7 +19,7 @@ const Footer = () => {
           </div>
 
           <div className="links">
-            <h5>Company</h5>
+            <h3>Company</h3>
             <ul>
               <li>About</li>
               <li>Team</li>
@@ -28,7 +29,7 @@ const Footer = () => {
           </div>
 
           <div className="links">
-            <h5>Connect</h5>
+            <h3>Connect</h3>
             <ul>
               <li>Contact</li>
               <li>Newsletter</li>
@@ -36,6 +37,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+      </div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 @import "./variables.scss";
 .footer_wrapper {
   width: 100%;
+  padding: 80px 0;
   background-color: $footer_background;
   border-top-right-radius: 80px;
   color: $footer_text;
@@ -9,15 +10,21 @@
 }
 .footer_container {
   @include Container();
+  width: 100%;
   display: flex;
   min-height: 350px;
+}
+.links-wrapper{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex: 1;
   .links {
     margin-left: 150px;
-    margin-top: 10px;
+    margin-top: 40px;
     ul {
       list-style-type: none;
       padding: 0;
-      margin-top: 30px;
       li {
         margin-top: 15px;
       }
@@ -27,21 +34,23 @@
 .title {
   font-size: 2.5em;
   font-weight: 700;
+  margin-top: 30px;
   color: #fff;
-  padding: 0;
+  text-align: center;
+  padding: 0 15px;
 }
 @media all and(max-width: 720px) {
-  .footer_wrapper {
-    padding: 80px 0;
-  }
   .footer_container {
+    flex-direction: column;
+  }
+  .links-wrapper{
     flex-direction: column;
     width: 100%;
     align-items: center;
     padding: 0;
     .links {
       margin: 0;
-      margin-top: 30px;
+      margin-top: 40px;
       text-align: center;
     }
   }
