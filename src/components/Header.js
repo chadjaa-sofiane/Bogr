@@ -1,11 +1,17 @@
 import "../styles/Header.scss";
 import { ReactComponent as ArrowIcon } from "../assets/images/icon-arrow-dark.svg";
 import HamburgerIcon from "../assets/images/icon-hamburger.svg";
+import closeIcon from "../assets/images/icon-close.svg";
 
 function Header() {
   return (
     <div className="Header">
       <div className="logo"> Blogr </div>
+      <input type="checkbox" id="toggle_menu" />
+      <label className="menu_toogle" htmlFor="toggle_menu">
+        <img src={HamburgerIcon} alt="burgerIcon" />
+        <img src={closeIcon} alt="closeIcon" />
+      </label>
       <div className="nav_container">
         <ul className="nav_bar">
           <li className="Nav_item">
@@ -47,10 +53,6 @@ function Header() {
           <button> Sign Up </button>
         </div>
       </div>
-      <label className="menu_toogle">
-        <img src={HamburgerIcon} alt="burgerIcon" />
-        <input type="checkbox" id="menubar" />
-      </label>
     </div>
   );
 }
