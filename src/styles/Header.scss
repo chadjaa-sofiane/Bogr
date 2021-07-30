@@ -116,6 +116,7 @@
     justify-content: space-around;
   }
   .nav_container {
+    display: none;
     position: absolute;
     top: 10rem;
     left: 50%;
@@ -175,19 +176,19 @@
       float: right;
       cursor: pointer;
     }
-    img:nth-child(2) {
+    img:nth-child(1) {
       display: block;
     }
   }
   #toggle_menu:checked ~ .menu_toogle {
     img:nth-child(1) {
-      display: block;
+      display: none;
     }
     img:nth-child(2) {
-      display: none;
+      display: block;
     }
   }
   #toggle_menu:checked ~ .nav_container {
-    display: none;
+    display: block;
   }
 }
